@@ -3,6 +3,6 @@ class Song < ActiveRecord::Base
 
   def song_artist_link
       binding.pry
-      self.title.capitalize + "-" + self.artist.name.capitalize
+      self.title + "-" + self.artist.name
   end
 end
